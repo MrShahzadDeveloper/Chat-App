@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -8,3 +9,12 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
+@layer base {
+  body {
+    @apply bg-[url('/bg.jpg')] ;
+    @apply flex items-center justify-center h-screen text-white;
+  }
+
+}
+
